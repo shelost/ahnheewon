@@ -1,0 +1,64 @@
+body {
+  color: #030025;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 150px;
+}
+
+::-moz-selection {
+  background: #ffee00;
+}
+
+::selection {
+  background: #ffee00;
+}
+
+a {
+  text-decoration: none;
+  color: #030025;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: "Inter", "Newsreader", "Noto Serif JP", sans-serif;
+  background: #030025;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.2px;
+  padding: 13px 24px 14px 24px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25), inset -1px 2px 3px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+button.inactive {
+  background: #e2def0;
+  color: #030025;
+  box-shadow: inset -1px 2px 3px rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  cursor: default;
+}
+button:hover {
+  background: #202150;
+  transform: translateY(-2px);
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25), inset -1px 2px 3px rgba(255, 255, 255, 0.5);
+}/*# sourceMappingURL=style.css.map */
