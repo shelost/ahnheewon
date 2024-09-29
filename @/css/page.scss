@@ -1,5 +1,7 @@
 body{
-    padding-top: 100px;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
 }
 
 #navbar{
@@ -11,10 +13,11 @@ body{
     justify-content: space-between;
     width: calc(100vw - 60px);
     padding: 0 15px;
-    height: 44px;
+    height: 40px;
     background: white;
-    box-shadow: 0 10px 40px rgba(black, 0.15);
-    border-radius: 16px;
+    border: 2px solid white;
+    box-shadow: 0 10px 40px rgba(black, 0.15), inset 1px -3px 6px rgba(black, 0.05);
+    border-radius: 36px;
     z-index: 5;
 
 
@@ -39,25 +42,69 @@ body{
     .navbtn{
         h2{
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 400;
             letter-spacing: -0.25px;
+        }
+        &.active{
+            h2{
+                font-weight: 600;
+            }
         }
     }
 
 }
 
+#header{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+   // background: #f0f0f0;
+    overflow: hidden;
+    #title{
+        height: 72px;
+        width: auto;
+        margin: auto;
+        position: fixed;
+        top: 120px;
+    }
+}
+
+$main: min(1400px, 95vw);
+
+#container{
+    background: rgba(white, 0.9);
+    padding: 50px 0;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: -60px;
+        left: 0;
+        height: 60px;
+        width: 100vw;
+        background-image: linear-gradient(to top, white, rgba(white, 0));
+    }
+}
 
 #main{
+    width: $main;
+    margin: auto;
+    /*
     display: grid;
     grid-template-columns: repeat(3, 1fr); // 3 columns on desktop
-    grid-auto-flow: dense; // Ensures that items fill gaps in a masonry-like fashion
-    gap: 20px; // Adjust the gap between items
+    columns: 20rem;
+    column-gap: 1rem;
     margin: auto;
 
     width: 90vw;
     max-width: 1400px;
+    */
+    //border: 1px solid red;
 
     .card{
+        width: calc(($main - 50px) / 3);
         .img{
             width: 100%;
             height: fit-content;
@@ -74,7 +121,6 @@ body{
                 width: 100%;
                 margin: 0;
                 transition: 0.2s ease;
-
             }
 
             &.light{
@@ -87,11 +133,13 @@ body{
             }
         }
         .expo{
+            margin: 10px 0 20px 0;
 
             h1{
-                font-size: 24px;
-                font-weight: 600;
-                letter-spacing: -0.3px;
+                font-family: 'Playfair Display', sans-serif;
+                font-size: 28px;
+                font-weight: 700;
+                letter-spacing: -0.7px;
                 margin: 8px 0 2px 0;
             }
             h2{
