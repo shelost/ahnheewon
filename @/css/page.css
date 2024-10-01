@@ -88,6 +88,11 @@ body {
   margin: auto;
   height: -moz-fit-content;
   height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  background: white;
 }
 #main .card {
   width: calc((min(1280px, 95vw) - 75px) / 4);

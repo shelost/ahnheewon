@@ -104,9 +104,17 @@ $main: min(1280px, 95vw);
     width: $main;
     margin: auto;
     height: fit-content;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    background: white;
 
     .card{
         width: calc(($main - 75px) / 4);
+
         .img{
             width: 100%;
             height: fit-content;

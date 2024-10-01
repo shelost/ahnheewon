@@ -42,14 +42,14 @@
                 </div>
             </a>
             <a href = '/design'>
-                <div class ='navbtn active'>
+                <div class ='navbtn'>
                     <h2>
                         Design
                     </h2>
                 </div>
             </a>
             <a href = '/comics'>
-                <div class ='navbtn'>
+                <div class ='navbtn active'>
                     <h2>
                         Comics
                     </h2>
@@ -89,94 +89,7 @@
 
     <div id = 'container'>
         <div id = 'main'>
-            <a href = '/'>
-                <div class = 'card sizer'>
-                    <div class = 'img'>
-                        <img src = '../@/assets/card-stan.png' alt = 'image'>
-                    </div>
-                    <div class = 'expo'>
-                        <h1> Stan </h1>
-                        <h2> Brand </h2>
-                    </div>
-                </div>
-            </a>
-            <a href = '/'>
-                <div class = 'card'>
-                    <div class = 'img'>
-                        <img src = '../@/assets/card-nybc.png' alt = 'image'>
-                    </div>
-                    <div class = 'expo'>
-                        <h1> NYBC </h1>
-                        <h2> Brand </h2>
-                    </div>
-                </div>
-            </a>
-            <a href = '/'>
-                <div class = 'card'>
-                    <div class = 'img'>
-                        <img src = '../@/assets/card-ahnheewon.png' alt = 'image'>
-                    </div>
-                    <div class = 'expo'>
-                        <h1> ahnheewon </h1>
-                        <h2> Brand </h2>
-                    </div>
-                </div>
-            </a>
-            <a href = '/'>
-                <div class = 'card'>
-                    <div class = 'img'>
-                        <img src = '../@/assets/card-logo1.png' alt = 'image'>
-                    </div>
-                    <div class = 'expo'>
-                        <h1> Logo Redesigns I </h1>
-                        <h2> Brand </h2>
-                    </div>
-                </div>
-            </a>
-            <a href = '/'>
-                <div class = 'card'>
-                    <div class = 'img light'>
-                        <img src = '../@/assets/card-logo2.png' alt = 'image'>
-                    </div>
-                    <div class = 'expo'>
-                        <h1> Logo Redesigns II </h1>
-                        <h2> Brand </h2>
-                    </div>
-                </div>
-            </a>
-            <a href = '/'>
-                <div class = 'card'>
-                    <div class = 'img'>
-                        <img src = '../@/assets/card-scioly.png' alt = 'image'>
-                    </div>
-                    <div class = 'expo'>
-                        <h1> Logo Redesigns I </h1>
-                        <h2> Brand </h2>
-                    </div>
-                </div>
-            </a>
-            <a href = '/'>
-                <div class = 'card'>
-                    <div class = 'img light'>
-                        <img src = '../@/assets/card-brain.png' alt = 'image'>
-                    </div>
-                    <div class = 'expo'>
-                        <h1> Logo Redesigns II </h1>
-                        <h2> Brand </h2>
-                    </div>
-                </div>
-            </a>
-            <a href = '/'>
-                <div class = 'card'>
-                    <div class = 'img light'>
-                        <img src = '../@/assets/card-paintball.png' alt = 'image'>
-                    </div>
-                    <div class = 'expo'>
-                        <h1> Logo Redesigns II </h1>
-                        <h2> Brand </h2>
-                    </div>
-                </div>
-            </a>
+
         </div>
     </div>
 
@@ -189,4 +102,28 @@
         background: #fff7ec;
     }
 </style>
+<script>
+
+
+    for (let i=0; i<44; i++){
+
+        let div =
+        `
+         <a href = '/'>
+            <div class = 'card'>
+                <div class = 'img light'>
+                    <img src = '../@/assets/comic/p${i+1}.png' alt = 'image'>
+                </div>
+                <div class = 'expo'>
+                    <h2> Page ${i+1} </h2>
+                </div>
+            </div>
+        </a>
+        `
+
+        document.getElementById('main').innerHTML = document.getElementById('main').innerHTML + div
+    }
+
+    document.getElementById('main').style.height = 'fit-content'
+</script>
 </html>
