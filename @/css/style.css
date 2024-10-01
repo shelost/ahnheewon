@@ -2,7 +2,6 @@ body {
   color: #030025;
   overflow-x: hidden;
   font-family: "Inter", sans-serif;
-  padding-bottom: 150px;
 }
 
 ::-moz-selection {
