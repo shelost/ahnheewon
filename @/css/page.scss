@@ -13,41 +13,51 @@ body{
     justify-content: space-between;
     width: calc(100vw - 60px);
     padding: 0 15px;
-    height: 40px;
-    background: white;
-    border: 2px solid white;
-    box-shadow: 0 10px 40px rgba(black, 0.15), inset 1px -3px 6px rgba(black, 0.05);
+    height: 36px;
+    background: rgba(white, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid white;
+    box-shadow: 0 10px 25px rgba(#030025, 0.05), inset 1px -2px 4px rgba(black, 0.03);
     border-radius: 36px;
     z-index: 5;
 
 
     #mast{
         #logo{
-            height: 14px;
+            height: 12.5px;
         }
     }
 
     #nav{
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 14px;
     }
 
     #corner{
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 14px;
     }
 
     .navbtn{
+
         h2{
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 400;
             letter-spacing: -0.25px;
+            opacity: 0.4;
+            transition: 0.2s ease;
         }
         &.active{
             h2{
-                font-weight: 600;
+                font-weight: 500;
+                opacity: 1;
+            }
+        }
+        &:hover{
+            h2{
+                opacity: 1;
             }
         }
     }
@@ -59,11 +69,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
+    height: 320px;
    // background: #f0f0f0;
     overflow: hidden;
     #title{
-        height: 72px;
+        height: 120px;
         width: auto;
         margin: auto;
         position: fixed;
@@ -71,10 +81,11 @@ body{
     }
 }
 
-$main: min(1400px, 95vw);
+$main: min(1280px, 95vw);
 
 #container{
-    background: rgba(white, 0.9);
+    background: rgba(white, 1);
+    height: fit-content;
     padding: 50px 0;
     position: relative;
     &::before{
@@ -88,29 +99,19 @@ $main: min(1400px, 95vw);
     }
 }
 
+
 #main{
     width: $main;
     margin: auto;
-    /*
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); // 3 columns on desktop
-    columns: 20rem;
-    column-gap: 1rem;
-    margin: auto;
-
-    width: 90vw;
-    max-width: 1400px;
-    */
-    //border: 1px solid red;
+    height: fit-content;
 
     .card{
-        width: calc(($main - 50px) / 3);
+        width: calc(($main - 75px) / 4);
         .img{
             width: 100%;
             height: fit-content;
             border-radius: 5px;
             overflow: hidden;
-            background: #ffce00;
 
             display: flex;
             align-items: center;
@@ -124,6 +125,7 @@ $main: min(1400px, 95vw);
             }
 
             &.light{
+                border: 2px solid white;
                 box-shadow: 4px 2px 25px rgba(black, 0.08);
             }
             &:hover{
@@ -137,16 +139,16 @@ $main: min(1400px, 95vw);
 
             h1{
                 font-family: 'Playfair Display', sans-serif;
-                font-size: 28px;
+                font-size: 24px;
                 font-weight: 700;
                 letter-spacing: -0.7px;
-                margin: 8px 0 2px 0;
+                margin: 8px 0 4px 0;
             }
             h2{
                 font-size: 14px;
-                font-weight: 400;
-                letter-spacing: -0.3px;
-                color: rgba(black, 0.5);
+                font-weight: 300;
+                letter-spacing: -0.4px;
+                color: rgba(black, 0.4);
             }
         }
     }
