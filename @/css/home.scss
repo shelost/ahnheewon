@@ -12,7 +12,7 @@
         #ahnheewon{
             width: 700px;
             max-width: 70vw;
-            margin-bottom: 8px;
+            margin-bottom: 20px;
             pointer-events: none;
             filter: drop-shadow(3px 5px 4px rgb(0 0 0 / 0.1));
         }
@@ -23,6 +23,7 @@
             font-style: italic;
             letter-spacing: -0.3px;
             margin-bottom: 50px;
+            text-align: center;
         }
 
         .icons{
@@ -191,5 +192,22 @@
     }
     to{
         transform: translateY(10px);
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    #splash{
+        width: 100%;
+        #header{
+            #ahnheewon{
+                max-width: 80vw;
+            }
+            h2{
+                font-size: 18px;
+                line-height: 110%;
+                width: 80%;
+            }
+        }
     }
 }

@@ -16,8 +16,30 @@ const T = Id('title')
 
 
 function Resize() {
-    let ratio = window.scrollY / window.screen.height
 
+    Scroll()
+
+    if (window.innerWidth > 800) {
+        console.log('b')
+        msnry.options.gutter = 25
+    } else {
+        msnry.options.gutter = 10
+    }
+    /*
+
+    msnry = new Masonry(elem, {
+        // options
+        itemSelector: '.card',
+        columnWidth: '.sizer',
+        gutter: 10,
+        horizontalOrder: true
+    });
+    */
+
+}
+
+function Scroll() {
+    let ratio = window.scrollY / window.screen.height
 
     if (window.screen.width > 800) {
         if (ratio < 1) {
@@ -32,5 +54,5 @@ function Resize() {
 
 Resize()
 
-window.addEventListener('scroll', Resize)
+window.addEventListener('scroll', Scroll)
 window.addEventListener('resize', Resize)
