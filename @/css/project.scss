@@ -1,0 +1,29 @@
+$main: min(1280px, 95vw);
+
+#header{
+    height: 200px;
+    width: $main;
+    margin: auto;
+
+    #title{
+        font-family: 'Playfair Display', sans-serif;
+    }
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    width: $main;
+    gap: 10px;
+    margin: auto;
+
+    .item{
+        width: calc(25% - 10px);
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}

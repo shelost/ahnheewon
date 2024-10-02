@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
+    <title> ahnheewon | Project </title>
     <script>
         (function() {
             var path = window.location.pathname;
@@ -31,7 +31,8 @@
 
         // Function to dynamically load project data based on project ID
         function loadProjectData(projectID) {
-            fetch('/design/projects.json')  // Adjust if your JSON is stored elsewhere
+            // Add a cache-busting query parameter to prevent caching issues
+            fetch(`/design/projects.json?t=${new Date().getTime()}`)  // Fetch with cache-busting
                 .then(response => response.json())
                 .then(data => {
                     var project = data.projects[projectID];
@@ -39,7 +40,7 @@
                         document.getElementById('project-title').innerText = project.title;
 
                         // Clear any previous images
-                        var galleryDiv = document.getElementById('gallery');
+                        var galleryDiv = document.getElementById('main');
                         galleryDiv.innerHTML = '';
 
                         // Add images to the gallery
@@ -47,7 +48,9 @@
                             var imgElement = document.createElement('img');
                             imgElement.src = image.url;
                             imgElement.alt = image.caption;
-                            galleryDiv.appendChild(imgElement);
+                            //galleryDiv.appendChild(imgElement);
+
+
                         });
                     } else {
                         document.getElementById('project-title').innerText = 'Project not found';

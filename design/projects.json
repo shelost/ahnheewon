@@ -1,17 +1,23 @@
 {
     "projects": {
-      "project-1": {
-        "title": "Project 1",
+      "stan": {
+        "title": "Stan",
         "images": [
-          { "url": "/images/project-1/image1.jpg", "caption": "Image 1 Caption" },
+          { "url": "/images/project-1/image1.jpg", "caption": "Hello" },
           { "url": "/images/project-1/image2.jpg", "caption": "Image 2 Caption" }
         ]
       },
-      "project-2": {
-        "title": "Project 2",
+      "lab": {
+        "title": "Learning + Recursion Lab ",
         "images": [
-          { "url": "/images/project-2/image1.jpg", "caption": "Image 1 Caption" },
-          { "url": "/images/project-2/image2.jpg", "caption": "Image 2 Caption" }
+          { "url": "../@/assets/img/img-lab-01.png", "caption": "Image 1 Caption" },
+          { "url": "../@/assets/img/img-lab-02.png", "caption": "Image 2 Caption" },
+          { "url": "../@/assets/img/img-lab-03.png", "caption": "Image 1 Caption" },
+          { "url": "../@/assets/img/img-lab-04.png", "caption": "Image 2 Caption" },
+          { "url": "../@/assets/img/img-lab-05.png", "caption": "Image 1 Caption" },
+          { "url": "../@/assets/img/img-lab-06.png", "caption": "Image 2 Caption" },
+          { "url": "../@/assets/img/img-lab-07.png", "caption": "Image 1 Caption" },
+          { "url": "../@/assets/img/img-lab-08.png", "caption": "Image 2 Caption" }
         ]
       }
     }

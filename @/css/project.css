@@ -1,0 +1,26 @@
+#header {
+  height: 200px;
+  width: min(1280px, 95vw);
+  margin: auto;
+}
+#header #title {
+  font-family: "Playfair Display", sans-serif;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  width: min(1280px, 95vw);
+  gap: 10px;
+  margin: auto;
+}
+#main .item {
+  width: calc(25% - 10px);
+}
+#main .item img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}/*# sourceMappingURL=project.css.map */

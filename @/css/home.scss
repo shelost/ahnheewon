@@ -112,15 +112,9 @@
             width: 200px;
             bottom: 0;
             right: 0;
-
             border: 4px solid white;
             box-shadow: -5px -10px 30px rgba(#030025, 0.2), inset 5px -5px 15px rgba(black, 0.25);
-
-
-
             animation: float 1s infinite ease-in-out alternate;
-
-
             background-size: cover;
 
             &.light{
@@ -148,7 +142,6 @@
                 bottom: 160px;
                 right: -40px;
             }
-
 
             .preview{
                 opacity: 0;
@@ -188,7 +181,6 @@
                     opacity: 1;
                 }
             }
-
         }
     }
 }
@@ -201,7 +193,6 @@
         transform: translateY(10px);
     }
 }
-
 
 @media screen and (max-width: 800px){
     #splash{

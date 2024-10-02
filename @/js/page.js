@@ -10,10 +10,7 @@ var msnry = new Masonry(elem, {
 
 
 //
-
-
 const T = Id('title')
-
 
 function Resize() {
 
