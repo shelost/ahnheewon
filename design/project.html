@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Gallery</title>
     <style>
-        /* Simple gallery styling */
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -25,40 +24,49 @@
 <div class="gallery" id="gallery"></div>
 
 <script>
-    // Function to get project ID from URL
-    function getProjectID() {
-        const url = new URL(window.location.href);
-        const path = url.pathname.split('/');
-        return path[path.length - 1];  // Gets the last part of the URL (project-id)
-    }
+// Function to get project ID from the query parameter
+function getProjectID() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('project');  // Get the 'project' parameter from the query string
+}
 
-    // Load project data dynamically from JSON
-    function loadProjectData(projectID) {
-        fetch('/design/projects.json')  // Assuming you place the JSON file in /design/projects.json
-            .then(response => response.json())
-            .then(data => {
-                const project = data.projects[projectID];
-                if (project) {
-                    document.getElementById('project-title').innerText = project.title;
-                    const galleryDiv = document.getElementById('gallery');
-                    project.images.forEach(image => {
-                        const imgElement = document.createElement('img');
-                        imgElement.src = image.url;
-                        imgElement.alt = image.caption;
-                        galleryDiv.appendChild(imgElement);
-                    });
-                } else {
-                    document.getElementById('project-title').innerText = 'Project not found';
-                }
-            })
-            .catch(error => {
-                console.error('Error loading project data:', error);
-            });
-    }
+// Load project data dynamically from a JSON file
+function loadProjectData(projectID) {
+    fetch('/design/projects.json')  // Adjust path if your JSON is stored elsewhere
+        .then(response => response.json())
+        .then(data => {
+            const project = data.projects[projectID];
+            if (project) {
+                document.getElementById('project-title').innerText = project.title;
 
-    // On page load, get project ID from URL and load corresponding data
-    const projectID = getProjectID();
+                // Clear any previous images
+                const galleryDiv = document.getElementById('gallery');
+                galleryDiv.innerHTML = '';
+
+                // Add images to the gallery
+                project.images.forEach(image => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = image.url;
+                    imgElement.alt = image.caption;
+                    galleryDiv.appendChild(imgElement);
+                });
+            } else {
+                document.getElementById('project-title').innerText = 'Project not found';
+            }
+        })
+        .catch(error => {
+            console.error('Error loading project data:', error);
+            document.getElementById('project-title').innerText = 'Error loading project';
+        });
+}
+
+// Get the project ID from the URL and load corresponding data
+const projectID = getProjectID();
+if (projectID) {
     loadProjectData(projectID);
+} else {
+    document.getElementById('project-title').innerText = 'No project specified';
+}
 </script>
 
 </body>
