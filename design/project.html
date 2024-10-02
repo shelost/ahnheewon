@@ -24,49 +24,39 @@
 <div class="gallery" id="gallery"></div>
 
 <script>
-// Function to get project ID from the query parameter
-function getProjectID() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('project');  // Get the 'project' parameter from the query string
-}
+    // Load project data dynamically from a JSON file
+    function loadProjectData(projectID) {
+        fetch('/design/projects.json')  // Adjust path if your JSON is stored elsewhere
+            .then(response => response.json())
+            .then(data => {
+                const project = data.projects[projectID];
+                if (project) {
+                    document.getElementById('project-title').innerText = project.title;
 
-// Load project data dynamically from a JSON file
-function loadProjectData(projectID) {
-    fetch('/design/projects.json')  // Adjust path if your JSON is stored elsewhere
-        .then(response => response.json())
-        .then(data => {
-            const project = data.projects[projectID];
-            if (project) {
-                document.getElementById('project-title').innerText = project.title;
+                    // Clear any previous images
+                    const galleryDiv = document.getElementById('gallery');
+                    galleryDiv.innerHTML = '';
 
-                // Clear any previous images
-                const galleryDiv = document.getElementById('gallery');
-                galleryDiv.innerHTML = '';
+                    // Add images to the gallery
+                    project.images.forEach(image => {
+                        const imgElement = document.createElement('img');
+                        imgElement.src = image.url;
+                        imgElement.alt = image.caption;
+                        galleryDiv.appendChild(imgElement);
+                    });
+                } else {
+                    document.getElementById('project-title').innerText = 'Project not found';
+                }
+            })
+            .catch(error => {
+                console.error('Error loading project data:', error);
+                document.getElementById('project-title').innerText = 'Error loading project';
+            });
+    }
 
-                // Add images to the gallery
-                project.images.forEach(image => {
-                    const imgElement = document.createElement('img');
-                    imgElement.src = image.url;
-                    imgElement.alt = image.caption;
-                    galleryDiv.appendChild(imgElement);
-                });
-            } else {
-                document.getElementById('project-title').innerText = 'Project not found';
-            }
-        })
-        .catch(error => {
-            console.error('Error loading project data:', error);
-            document.getElementById('project-title').innerText = 'Error loading project';
-        });
-}
-
-// Get the project ID from the URL and load corresponding data
-const projectID = getProjectID();
-if (projectID) {
-    loadProjectData(projectID);
-} else {
-    document.getElementById('project-title').innerText = 'No project specified';
-}
+    // Get project ID from the URL path
+    const projectID = window.location.pathname.split('/').pop(); // e.g., /design/project-1 -> project-1
+    loadProjectData(projectID);  // Load project data based on the project ID
 </script>
 
 </body>

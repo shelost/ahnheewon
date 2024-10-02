@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+    <title>Project Page</title>
     <script>
         (function() {
             var path = window.location.pathname;
@@ -12,18 +12,56 @@
             // Check if the URL matches /design/<project-id>
             if (path.startsWith('/design/')) {
                 var projectID = path.split('/').pop(); // Extract project ID
-                if (projectID) {
-                    // Redirect to project.html with the project ID as a query parameter
-                    window.location.replace('/design/project.html?project=' + projectID);
-                } else {
-                    document.body.innerHTML = '<h1>404 - Project Not Found</h1>';
-                }
+
+                // Load the project.html content without changing the URL
+                fetch('/design/project.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.open();
+                        document.write(html);
+                        document.close();
+
+                        // Update the project page content dynamically
+                        loadProjectData(projectID);
+                    });
             } else {
                 document.body.innerHTML = '<h1>404 - Page Not Found</h1>';
             }
         })();
+
+        // Function to dynamically load project data based on project ID
+        function loadProjectData(projectID) {
+            fetch('/design/projects.json')  // Adjust if your JSON is stored elsewhere
+                .then(response => response.json())
+                .then(data => {
+                    var project = data.projects[projectID];
+                    if (project) {
+                        document.getElementById('project-title').innerText = project.title;
+
+                        // Clear any previous images
+                        var galleryDiv = document.getElementById('gallery');
+                        galleryDiv.innerHTML = '';
+
+                        // Add images to the gallery
+                        project.images.forEach(function(image) {
+                            var imgElement = document.createElement('img');
+                            imgElement.src = image.url;
+                            imgElement.alt = image.caption;
+                            galleryDiv.appendChild(imgElement);
+                        });
+                    } else {
+                        document.getElementById('project-title').innerText = 'Project not found';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading project data:', error);
+                    document.getElementById('project-title').innerText = 'Error loading project';
+                });
+        }
     </script>
 </head>
 <body>
+    <h1 id="project-title">Loading Project...</h1>
+    <div class="gallery" id="gallery"></div>
 </body>
 </html>
