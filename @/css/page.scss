@@ -204,6 +204,10 @@ $main: min(1280px, 95vw);
 
 @media screen and (max-width: 800px){
 
+    #navbar{
+        display: none;
+    }
+
     #header{
         height: 300px;
         #title{

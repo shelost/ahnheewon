@@ -20,7 +20,6 @@ function Resize() {
     Scroll()
 
     if (window.innerWidth > 800) {
-        console.log('b')
         msnry.options.gutter = 25
     } else {
         msnry.options.gutter = 10

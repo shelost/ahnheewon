@@ -171,6 +171,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  #navbar {
+    display: none;
+  }
   #header {
     height: 300px;
   }
