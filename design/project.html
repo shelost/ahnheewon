@@ -1,0 +1,65 @@
+<!-- project.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery</title>
+    <style>
+        /* Simple gallery styling */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="project-title">Loading Project...</h1>
+<div class="gallery" id="gallery"></div>
+
+<script>
+    // Function to get project ID from URL
+    function getProjectID() {
+        const url = new URL(window.location.href);
+        const path = url.pathname.split('/');
+        return path[path.length - 1];  // Gets the last part of the URL (project-id)
+    }
+
+    // Load project data dynamically from JSON
+    function loadProjectData(projectID) {
+        fetch('/design/projects.json')  // Assuming you place the JSON file in /design/projects.json
+            .then(response => response.json())
+            .then(data => {
+                const project = data.projects[projectID];
+                if (project) {
+                    document.getElementById('project-title').innerText = project.title;
+                    const galleryDiv = document.getElementById('gallery');
+                    project.images.forEach(image => {
+                        const imgElement = document.createElement('img');
+                        imgElement.src = image.url;
+                        imgElement.alt = image.caption;
+                        galleryDiv.appendChild(imgElement);
+                    });
+                } else {
+                    document.getElementById('project-title').innerText = 'Project not found';
+                }
+            })
+            .catch(error => {
+                console.error('Error loading project data:', error);
+            });
+    }
+
+    // On page load, get project ID from URL and load corresponding data
+    const projectID = getProjectID();
+    loadProjectData(projectID);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "projects": {
+      "project-1": {
+        "title": "Project 1",
+        "images": [
+          { "url": "/images/project-1/image1.jpg", "caption": "Image 1 Caption" },
+          { "url": "/images/project-1/image2.jpg", "caption": "Image 2 Caption" }
+        ]
+      },
+      "project-2": {
+        "title": "Project 2",
+        "images": [
+          { "url": "/images/project-2/image1.jpg", "caption": "Image 1 Caption" },
+          { "url": "/images/project-2/image2.jpg", "caption": "Image 2 Caption" }
+        ]
+      }
+    }
+  }
