@@ -70,4 +70,51 @@ button:hover {
   background: #202150;
   transform: translateY(-2px);
   box-shadow: 2px 6px 10px rgba(3, 0, 37, 0.25), inset -1px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+#navbar {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100vw - 60px);
+  padding: 0 15px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid white;
+  box-shadow: 0 10px 25px rgba(3, 0, 37, 0.05), inset 1px -2px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 36px;
+  z-index: 5;
+  transition: 0.3s ease;
+}
+#navbar #mast #logo {
+  height: 12.5px;
+}
+#navbar #nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+#navbar #corner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+#navbar .navbtn h2 {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  opacity: 0.4;
+  transition: 0.2s ease;
+}
+#navbar .navbtn.active h2 {
+  font-weight: 500;
+  opacity: 1;
+}
+#navbar .navbtn:hover h2 {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

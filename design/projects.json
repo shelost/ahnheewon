@@ -2,22 +2,26 @@
     "projects": {
       "stan": {
         "title": "Stan",
+        "subtitle": "Your All-in-One Creator Store",
+        "url": "https://stan.store",
         "images": [
-          { "url": "/images/project-1/image1.jpg", "caption": "Hello" },
-          { "url": "/images/project-1/image2.jpg", "caption": "Image 2 Caption" }
+          { "url": "../@/assets/img/img-lab-01.png", "title": "Title", "subtitle": "This is a subtitle." },
+          { "url": "../@/assets/img/img-lab-01.png","title": "Title", "subtitle": "This is a subtitle." }
         ]
       },
       "lab": {
         "title": "Learning + Recursion Lab ",
+        "subtitle": "A Cornell lab",
+        "url": "https://www.cs.cornell.edu/~ellisk/",
         "images": [
-          { "url": "../@/assets/img/img-lab-01.png", "caption": "Image 1 Caption" },
-          { "url": "../@/assets/img/img-lab-02.png", "caption": "Image 2 Caption" },
-          { "url": "../@/assets/img/img-lab-03.png", "caption": "Image 1 Caption" },
-          { "url": "../@/assets/img/img-lab-04.png", "caption": "Image 2 Caption" },
-          { "url": "../@/assets/img/img-lab-05.png", "caption": "Image 1 Caption" },
-          { "url": "../@/assets/img/img-lab-06.png", "caption": "Image 2 Caption" },
-          { "url": "../@/assets/img/img-lab-07.png", "caption": "Image 1 Caption" },
-          { "url": "../@/assets/img/img-lab-08.png", "caption": "Image 2 Caption" }
+          { "url": "../@/assets/img/img-lab-01.png", "title": "Title", "subtitle": "This is a subtitle." },
+          { "url": "../@/assets/img/img-lab-02.png","title": "Title", "subtitle": "This is a subtitle." },
+          { "url": "../@/assets/img/img-lab-03.png", "title": "Title", "subtitle": "This is a subtitle." },
+          { "url": "../@/assets/img/img-lab-04.png","title": "Title", "subtitle": "This is a subtitle." },
+          { "url": "../@/assets/img/img-lab-05.png", "title": "Title", "subtitle": "This is a subtitle." },
+          { "url": "../@/assets/img/img-lab-06.png","title": "Title", "subtitle": "This is a subtitle." },
+          { "url": "../@/assets/img/img-lab-07.png", "title": "Title", "subtitle": "This is a subtitle." },
+          { "url": "../@/assets/img/img-lab-08.png", "title": "Title", "subtitle": "This is a subtitle." }
         ]
       }
     }

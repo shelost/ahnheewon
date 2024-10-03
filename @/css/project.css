@@ -1,21 +1,37 @@
+body {
+  padding-bottom: 100px;
+}
+
 #header {
-  height: 200px;
   width: min(1280px, 95vw);
   margin: auto;
+  padding: 100px 0 75px 0;
 }
 #header #title {
+  font-size: 48px;
+  font-weight: 800;
   font-family: "Playfair Display", sans-serif;
+  letter-spacing: -0.6px;
+  margin-bottom: 16px;
+}
+#header #subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  margin-bottom: 32px;
 }
 
 #main {
   display: flex;
   flex-wrap: wrap;
   width: min(1280px, 95vw);
-  gap: 10px;
+  gap: 20px;
   margin: auto;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 #main .item {
-  width: calc(25% - 10px);
+  width: calc(25% - 15px);
 }
 #main .item img {
   width: 100%;
@@ -23,4 +39,18 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+#main .item .expo {
+  padding: 10px 0;
+}
+#main .item .expo h1 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.12px;
+  margin-bottom: 4px;
+}
+#main .item .expo p {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: -0.12px;
 }/*# sourceMappingURL=project.css.map */

@@ -1,12 +1,27 @@
 $main: min(1280px, 95vw);
 
+body{
+    padding-bottom: 100px;
+}
+
 #header{
-    height: 200px;
     width: $main;
     margin: auto;
+    padding: 100px 0 75px 0;
 
     #title{
+        font-size: 48px;
+        font-weight: 800;
         font-family: 'Playfair Display', sans-serif;
+        letter-spacing: -0.6px;
+        margin-bottom: 16px;
+    }
+
+    #subtitle{
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: -0.1px;
+        margin-bottom: 32px;
     }
 }
 
@@ -14,16 +29,34 @@ $main: min(1280px, 95vw);
     display: flex;
     flex-wrap: wrap;
     width: $main;
-    gap: 10px;
+    gap: 20px;
     margin: auto;
+    height: fit-content !important;
+    //border: 1px solid red;
+   //padding-bottom: 100px;
 
     .item{
-        width: calc(25% - 10px);
+        width: calc(25% - 15px);
         img{
             width: 100%;
             height: auto;
             object-fit: cover;
             border-radius: 10px;
+        }
+
+        .expo{
+            padding: 10px 0;
+            h1{
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: -0.12px;
+                margin-bottom: 4px;
+            }
+            p{
+                font-size: 13px;
+                font-weight: 300;
+                letter-spacing: -0.12px;
+            }
         }
     }
 }
