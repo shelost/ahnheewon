@@ -3,6 +3,7 @@
       "stan": {
         "title": "Stan",
         "subtitle": "Your All-in-One Creator Store",
+        "blurb": "<b>Stan</b> is a creator-focused startup, ",
         "url": "https://stan.store",
         "images": [
           { "url": "../@/assets/img/img-lab-01.png", "title": "Title", "subtitle": "This is a subtitle." },
@@ -10,8 +11,9 @@
         ]
       },
       "lab": {
-        "title": "Learning + Recursion Lab ",
-        "subtitle": "A Cornell lab",
+        "title": "Learning+Recursion Lab ",
+        "subtitle": "AI Research Lab",
+        "blurb": "The <b>Learning+Recursion Lab</b> is an research lab at Cornell University, led by Prof. Kevin Ellis. <br><br> I was commissioned to create the logo for the lab, which was selected out of multiple potential versions.",
         "url": "https://www.cs.cornell.edu/~ellisk/",
         "images": [
           { "url": "../@/assets/img/img-lab-01.png", "title": "Title", "subtitle": "This is a subtitle." },

@@ -74,19 +74,19 @@ button:hover {
 
 #navbar {
   position: fixed;
-  top: 15px;
-  left: 15px;
+  top: 10px;
+  left: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: calc(100vw - 60px);
+  width: calc(100vw - 54px);
   padding: 0 15px;
   height: 36px;
   background: rgba(255, 255, 255, 0.95);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   border: 1px solid white;
-  box-shadow: 0 10px 25px rgba(3, 0, 37, 0.05), inset 1px -2px 4px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 25px rgba(3, 0, 37, 0.08), inset 1px -2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 36px;
   z-index: 5;
   transition: 0.3s ease;

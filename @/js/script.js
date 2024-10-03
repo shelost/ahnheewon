@@ -15,7 +15,7 @@ try {
         }
         // If scrolling up, bring the navbar back down
         else {
-            navbar.style.top = '15px'; // Reset navbar to its original position
+            navbar.style.top = '10px'; // Reset navbar to its original position
         }
 
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling

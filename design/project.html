@@ -84,6 +84,7 @@
 <div id = 'header'>
     <h1 id='title'> Project not found </h1>
     <h2 id='subtitle'> Unfortunately, this project does not exist. </h2>
+    <p id = 'blurb'></p>
     <a id = 'link' href = ''>
         <button id='cta' class = 'secondary'>
             Visit Homepage
@@ -114,7 +115,9 @@
             .then(data => {
                 const project = data.projects[projectID];
                 if (project) {
-                    document.getElementById('title').innerText = project.title;
+                    document.getElementById('title').innerHTML = project.title;
+                    document.getElementById('subtitle').innerHTML = project.subtitle;
+                    document.getElementById('blurb').innerHTML = project.blurb;
 
                     // Clear any previous images
                     const galleryDiv = document.getElementById('main');
@@ -154,7 +157,7 @@
                         galleryDiv.innerHTML = galleryDiv.innerHTML + div
                     });
                 } else {
-                    document.getElementById('title').innerText = 'Project not found';
+                   // document.getElementById('title').innerText = 'Project not found';
                 }
             })
             .catch(error => {

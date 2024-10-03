@@ -13,15 +13,19 @@ body{
         font-size: 48px;
         font-weight: 800;
         font-family: 'Playfair Display', sans-serif;
-        letter-spacing: -0.6px;
-        margin-bottom: 16px;
+        letter-spacing: -1px;
+        margin-bottom: 32px;
     }
 
-    #subtitle{
+    #blurb{
         font-size: 14px;
         font-weight: 300;
         letter-spacing: -0.1px;
         margin-bottom: 32px;
+
+        b{
+            font-weight: 500;
+        }
     }
 }
 

@@ -1,0 +1,13 @@
+#top #banner {
+  background: #d63030;
+  background: linear-gradient(110deg, #3075d6, #000512 60%);
+}
+#top #qing {
+  width: 200px !important;
+}
+#top .statue {
+  height: 40vw;
+}
+.timetable {
+  background: rgba(17, 20, 36, 0.99);
+}/*# sourceMappingURL=napoleon.css.map */

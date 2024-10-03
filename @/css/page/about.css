@@ -1,0 +1,140 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  padding: 70px;
+  gap: 80px;
+  margin: auto;
+}
+.page .com {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+.page .com img {
+  height: 130px;
+}
+.page .com .expo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page .com .expo p {
+  font-size: 14px;
+  letter-spacing: -0.25px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.page .graphic {
+  width: 500px;
+  height: 300px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.03);
+  position: relative;
+  background-image: url("../assets/screen.png");
+  background-size: cover;
+  border: 1px solid white;
+  box-shadow: 0 15px 30px rgba(0, 16, 109, 0.05);
+}
+.page .graphic .category {
+  background: #e5e2f8;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+.page .graphic .category h2 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+.page .graphic .circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  bottom: 0;
+  right: 0;
+  border: 4px solid white;
+  box-shadow: -5px -10px 30px rgba(3, 0, 37, 0.2), inset 5px -5px 15px rgba(0, 0, 0, 0.25);
+  animation: float 1s infinite ease-in-out alternate;
+  background-size: cover;
+}
+.page .graphic .circle.light {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 5px -5px 15px rgba(0, 0, 0, 0.05);
+}
+.page .graphic .circle.c1 {
+  width: 180px;
+  height: 180px;
+  bottom: -40px;
+  right: -50px;
+  animation-delay: 0.2s;
+}
+.page .graphic .circle.c2 {
+  width: 140px;
+  height: 140px;
+  bottom: -50px;
+  right: 150px;
+  animation-delay: 0.4s;
+}
+.page .graphic .circle.c3 {
+  width: 100px;
+  height: 100px;
+  bottom: 160px;
+  right: -40px;
+}
+.page .graphic .circle .preview {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 0, 37, 0.75);
+  border-radius: 50%;
+  padding: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.2s ease;
+}
+.page .graphic .circle .preview h2 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 100%;
+  margin: 6px 0;
+  width: 80%;
+  text-shadow: 0 2px 8px black;
+}
+.page .graphic .circle .preview h3 {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 2px 6px black;
+}
+.page .graphic .circle:hover .preview {
+  opacity: 1;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}/*# sourceMappingURL=about.css.map */
