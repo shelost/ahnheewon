@@ -3,11 +3,11 @@
       "stan": {
         "title": "Stan",
         "subtitle": "Your All-in-One Creator Store",
-        "blurb": "<b>Stan</b> is a creator-focused startup, ",
+        "blurb": "<b>Stan</b> is a creator-focused startup, a <i>\"Shopify for Creators\"</i> enabling people to easily get started with their online businesses.",
         "url": "https://stan.store",
         "images": [
-          { "url": "../@/assets/img/img-lab-01.png", "title": "Title", "subtitle": "This is a subtitle." },
-          { "url": "../@/assets/img/img-lab-01.png","title": "Title", "subtitle": "This is a subtitle." }
+          { "url": "../@/assets/img/img-lab-01.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "dark" },
+          { "url": "../@/assets/img/img-lab-01.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "dark" }
         ]
       },
       "lab": {
@@ -16,14 +16,59 @@
         "blurb": "The <b>Learning+Recursion Lab</b> is an research lab at Cornell University, led by Prof. Kevin Ellis. <br><br> I was commissioned to create the logo for the lab, which was selected out of multiple potential versions.",
         "url": "https://www.cs.cornell.edu/~ellisk/",
         "images": [
-          { "url": "../@/assets/img/img-lab-01.png", "title": "Title", "subtitle": "This is a subtitle." },
-          { "url": "../@/assets/img/img-lab-02.png","title": "Title", "subtitle": "This is a subtitle." },
-          { "url": "../@/assets/img/img-lab-03.png", "title": "Title", "subtitle": "This is a subtitle." },
-          { "url": "../@/assets/img/img-lab-04.png","title": "Title", "subtitle": "This is a subtitle." },
-          { "url": "../@/assets/img/img-lab-05.png", "title": "Title", "subtitle": "This is a subtitle." },
-          { "url": "../@/assets/img/img-lab-06.png","title": "Title", "subtitle": "This is a subtitle." },
-          { "url": "../@/assets/img/img-lab-07.png", "title": "Title", "subtitle": "This is a subtitle." },
-          { "url": "../@/assets/img/img-lab-08.png", "title": "Title", "subtitle": "This is a subtitle." }
+            { "url": "../@/assets/img/img-lab-00.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 2, "color": "dark" },
+            { "url": "../@/assets/img/img-lab-01.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "light" },
+            { "url": "../@/assets/img/img-lab-02.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "dark" },
+            { "url": "../@/assets/img/img-lab-03.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-lab-04.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "light" },
+            { "url": "../@/assets/img/img-lab-05.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-lab-06.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-lab-07.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "dark" },
+            { "url": "../@/assets/img/img-lab-08.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "dark" },
+            { "url": "../@/assets/img/img-lab-09.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "dark" },
+            { "url": "../@/assets/img/img-lab-10.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "dark" },
+            { "url": "../@/assets/img/img-lab-11.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "dark" },
+            { "url": "../@/assets/img/img-lab-12.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "dark" },
+            { "url": "../@/assets/img/img-lab-13.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-lab-14.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-lab-15.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-lab-16.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "light" }
+        ]
+      },
+      "ahw": {
+        "title": "ahnheewon",
+        "subtitle": "Studio Brand",
+        "blurb": "The <b>ahnheewon</b> is an research lab at Cornell University, led by Prof. Kevin Ellis. <br><br> I was commissioned to create the logo for the lab, which was selected out of multiple potential versions.",
+        "url": "https://www.ahnheewon.com",
+        "images": [
+            { "url": "../@/assets/img/img-ahw-01.png", "title": "Primary Logo", "subtitle": "This is a subtitle.", "size": 2, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-02.png","title": "Dark Logo", "subtitle": "This is a subtitle.", "size": 2, "color": "dark" },
+            { "url": "../@/assets/img/img-ahw-03.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-04.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-05.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-06.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-07.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-08.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-09.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-10.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" }
+        ]
+      },
+      "nybc": {
+        "title": "NYBC",
+        "subtitle": "Brand + Marketing",
+        "blurb": "The <b>New York Bible Conference</b> is an annual event held in collaboration with five local churches, a yearly staple since 2009.",
+        "url": "https://www.ahnheewon.com",
+        "images": [
+            { "url": "../@/assets/img/img-ahw-01.png", "title": "Primary Logo", "subtitle": "This is a subtitle.", "size": 2, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-02.png","title": "Dark Logo", "subtitle": "This is a subtitle.", "size": 2, "color": "dark" },
+            { "url": "../@/assets/img/img-ahw-03.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-04.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-05.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-06.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-07.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-08.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-09.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-10.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" }
         ]
       }
     }

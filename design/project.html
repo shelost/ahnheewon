@@ -82,6 +82,7 @@
 
 
 <div id = 'header'>
+    <img id = 'ahw' src = '../@/assets/ahnheewon3.png' alt = 'ahnheewon Logo'>
     <h1 id='title'> Project not found </h1>
     <h2 id='subtitle'> Unfortunately, this project does not exist. </h2>
     <p id = 'blurb'></p>
@@ -141,7 +142,7 @@
                         */
                         let div =
                         `
-                        <div class = 'item'>
+                        <div class = 'item size_${image.size} ${image.color}'>
                             <img src = '${image.url}' class = 'img' alt = '${image.title}'>
                             <div class = 'expo'>
                                 <h1>
