@@ -38,7 +38,7 @@
       "ahw": {
         "title": "ahnheewon",
         "subtitle": "Studio Brand",
-        "blurb": "The <b>ahnheewon</b> is an research lab at Cornell University, led by Prof. Kevin Ellis. <br><br> I was commissioned to create the logo for the lab, which was selected out of multiple potential versions.",
+        "blurb": "<b>ahnheewon</b> is my personal agency brand, where I store all of my work in various fields. <br><br> My mission is for the brand to become a mark of high quality & care",
         "url": "https://www.ahnheewon.com",
         "images": [
             { "url": "../@/assets/img/img-ahw-01.png", "title": "Primary Logo", "subtitle": "This is a subtitle.", "size": 2, "color": "white" },
@@ -58,6 +58,24 @@
         "subtitle": "Brand + Marketing",
         "blurb": "The <b>New York Bible Conference</b> is an annual event held in collaboration with five local churches, a yearly staple since 2009.",
         "url": "https://www.ahnheewon.com",
+        "images": [
+            { "url": "../@/assets/img/img-ahw-01.png", "title": "Primary Logo", "subtitle": "This is a subtitle.", "size": 2, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-02.png","title": "Dark Logo", "subtitle": "This is a subtitle.", "size": 2, "color": "dark" },
+            { "url": "../@/assets/img/img-ahw-03.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-04.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-05.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-06.png","title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-07.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-08.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-09.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" },
+            { "url": "../@/assets/img/img-ahw-10.png", "title": "Title", "subtitle": "This is a subtitle.", "size": 1, "color": "white" }
+        ]
+      },
+      "redesign": {
+        "title": "Logo Redesigns, Part I",
+        "subtitle": "Design Collection",
+        "blurb": "I tried to put my own twist on a few well-known corporate logos.",
+        "url": "",
         "images": [
             { "url": "../@/assets/img/img-ahw-01.png", "title": "Primary Logo", "subtitle": "This is a subtitle.", "size": 2, "color": "white" },
             { "url": "../@/assets/img/img-ahw-02.png","title": "Dark Logo", "subtitle": "This is a subtitle.", "size": 2, "color": "dark" },
