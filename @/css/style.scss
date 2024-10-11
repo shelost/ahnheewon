@@ -109,6 +109,7 @@ button{
     }
 
     .navbtn{
+        position: relative;
 
         h2{
             font-size: 13px;
@@ -121,6 +122,17 @@ button{
             h2{
                 font-weight: 500;
                 opacity: 1;
+            }
+
+            &:after{
+                content: '';
+                height: 2px;
+                width: 80%;
+                border-radius: 2px;
+                background: $dark;
+                position: absolute;
+                bottom: -11px;
+                left: 10%;
             }
         }
         &:hover{

@@ -14,6 +14,7 @@
 #splash #header #ahnheewon {
   width: 700px;
   max-width: 70vw;
+  margin-top: 40px;
   margin-bottom: 20px;
   pointer-events: none;
   filter: drop-shadow(3px 5px 4px rgba(0, 0, 0, 0.1));
@@ -23,7 +24,7 @@
   font-size: 22px;
   font-weight: 400;
   font-style: italic;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.12px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -39,6 +40,61 @@
   flex-direction: column;
   align-items: center;
   gap: 14px;
+}
+#splash #header .buttons .secondary {
+  display: none;
+}
+#splash #header .tabs {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+  margin-bottom: 44px;
+}
+#splash #header .tabs .tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 0 5px;
+  transition: 0.2s ease;
+}
+#splash #header .tabs .tab h2 {
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.9;
+  transition: 0.2s ease;
+}
+#splash #header .tabs .tab .line {
+  height: 2.5px;
+  width: 80%;
+  background: black;
+  border-radius: 2px;
+  transition: 0.2s ease;
+}
+#splash #header .tabs .tab#_design .line {
+  background: #747394;
+}
+#splash #header .tabs .tab#_games .line {
+  background: #7759F3;
+}
+#splash #header .tabs .tab#_comics .line {
+  background: #FF4D00;
+}
+#splash #header .tabs .tab#_blog .line {
+  background: #FF234A;
+}
+#splash #header .tabs .tab#_apps .line {
+  background: #02C57F;
+}
+#splash #header .tabs .tab:hover {
+  padding: 0 4px;
+}
+#splash #header .tabs .tab:hover h2 {
+  font-weight: 500;
+  opacity: 1;
+}
+#splash #header .tabs .tab:hover .line {
+  width: 65%;
 }
 
 .page {

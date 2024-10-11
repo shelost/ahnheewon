@@ -13,11 +13,11 @@ body {
   overflow: hidden;
 }
 #header #title {
-  height: 120px;
+  height: 140px;
   width: auto;
   margin: auto;
   position: fixed;
-  top: 120px;
+  top: 105px;
 }
 
 #container {

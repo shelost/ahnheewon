@@ -11,9 +11,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         #ahnheewon{
             width: 700px;
             max-width: 70vw;
+            margin-top: 40px;
             margin-bottom: 20px;
             pointer-events: none;
             filter: drop-shadow(3px 5px 4px rgb(0 0 0 / 0.1));
@@ -23,7 +25,7 @@
             font-size: 22px;
             font-weight: 400;
             font-style: italic;
-            letter-spacing: -0.3px;
+            letter-spacing: -0.12px;
             margin-bottom: 50px;
             text-align: center;
         }
@@ -41,9 +43,86 @@
             flex-direction: column;
             align-items: center;
             gap: 14px;
+
+            .secondary{
+                display: none;
+            }
+
+            #cta{
+
+            }
+        }
+
+        .tabs{
+            display: flex;
+            gap: 15px;
+            margin-top: 8px;
+            margin-bottom: 44px;
+
+            .tab{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2px;
+                padding: 0 5px;
+               // border-bottom: 2px solid black;
+               transition: 0.2s ease;
+                h2{
+                    font-weight: 400;
+                    margin: 0;
+                    opacity: 0.9;
+                    transition: 0.2s ease;
+                }
+                .line{
+                    height: 2.5px;
+                    width: 80%;
+                    background: black;
+                    border-radius: 2px;
+                    transition: 0.2s ease;
+                }
+
+                &#_design{
+                    .line{
+                        background: $design;
+                    }
+                }
+                &#_games{
+                    .line{
+                        background: $games;
+                    }
+                }
+                &#_comics{
+                    .line{
+                        background: $comics;
+                    }
+                }
+                &#_blog{
+                    .line{
+                        background: $blog;
+                    }
+                }
+                &#_apps{
+                    .line{
+                        background: $apps;
+                    }
+                }
+
+                &:hover{
+                    padding: 0 4px;
+                    h2{
+                        font-weight: 500;
+                        opacity: 1;
+                    }
+                    .line{
+                        width: 65%;
+                    }
+                }
+            }
+
         }
     }
 }
+
 
 .page{
     display: none;

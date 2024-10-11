@@ -106,6 +106,9 @@ button:hover {
   align-items: center;
   gap: 14px;
 }
+#navbar .navbtn {
+  position: relative;
+}
 #navbar .navbtn h2 {
   font-size: 13px;
   font-weight: 400;
@@ -116,6 +119,16 @@ button:hover {
 #navbar .navbtn.active h2 {
   font-weight: 500;
   opacity: 1;
+}
+#navbar .navbtn.active:after {
+  content: "";
+  height: 2px;
+  width: 80%;
+  border-radius: 2px;
+  background: #030025;
+  position: absolute;
+  bottom: -11px;
+  left: 10%;
 }
 #navbar .navbtn:hover h2 {
   opacity: 1;
