@@ -9,6 +9,21 @@ var msnry = new Masonry(elem, {
 });
 
 
+setTimeout(() => {
+
+    if (!window.location.pathname.includes('comics')) {
+        msnry = new Masonry(elem, {
+            // options
+            itemSelector: '.card',
+            columnWidth: '.sizer',
+            gutter: 25,
+            horizontalOrder: true
+        });
+    }
+
+}, 200);
+
+
 //
 const T = Id('title')
 
@@ -52,9 +67,6 @@ Resize()
 
 window.addEventListener('scroll', Scroll)
 window.addEventListener('resize', Resize)
-
-
-
 
 
 let lastScrollTop = 0;
