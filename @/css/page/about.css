@@ -1,48 +1,82 @@
+#ahw {
+  margin-left: calc(50vw - 450px);
+  margin-top: 120px;
+  margin-bottom: 30px;
+  width: 900px;
+}
+
 #about {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: min(900px, 90vw);
+  margin: auto;
+  margin-bottom: 40px;
+}
+#about p {
+  font-family: "Spectral", "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.6px;
+  margin-bottom: 28px;
+}
+
+#container {
+  margin-left: 10px;
+}
+#container:before {
+  display: none;
 }
 
 .page {
   display: flex;
   justify-content: center;
-  width: 90vw;
-  padding: 70px;
-  gap: 80px;
+  align-items: center;
+  width: min(900px, 90vw);
+  gap: 0px;
   margin: auto;
+  margin-bottom: 60px;
+  padding: 2px;
+  box-shadow: 0 10px 40px rgba(3, 0, 37, 0.07);
+  border-radius: 8px;
 }
 .page .com {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  flex: 1;
 }
 .page .com img {
-  height: 130px;
+  height: 100px;
 }
 .page .com .expo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 12px;
 }
 .page .com .expo p {
+  display: none;
   font-size: 14px;
-  letter-spacing: -0.25px;
+  letter-spacing: -0.2px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 350;
   margin-bottom: 30px;
+  line-height: 125%;
+}
+.page .com .expo p b {
+  font-weight: 600;
 }
 .page .graphic {
-  width: 500px;
-  height: 300px;
-  border-radius: 12px;
+  width: 480px;
+  height: 360px;
+  border-radius: 4px;
   flex-shrink: 0;
   background: rgba(0, 0, 0, 0.03);
   position: relative;
   background-image: url("../assets/screen.png");
   background-size: cover;
-  border: 1px solid white;
   box-shadow: 0 15px 30px rgba(0, 16, 109, 0.05);
 }
 .page .graphic .category {
@@ -54,6 +88,7 @@
   left: -6px;
   padding: 6px 8px;
   border-radius: 8px;
+  display: none;
 }
 .page .graphic .category h2 {
   font-size: 14px;
@@ -67,10 +102,12 @@
   width: 200px;
   bottom: 0;
   right: 0;
-  border: 4px solid white;
+  border: 1px solid white;
   box-shadow: -5px -10px 30px rgba(3, 0, 37, 0.2), inset 5px -5px 15px rgba(0, 0, 0, 0.25);
-  animation: float 1s infinite ease-in-out alternate;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .page .graphic .circle.light {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 5px -5px 15px rgba(0, 0, 0, 0.05);
@@ -100,6 +137,7 @@
   width: 100%;
   height: 100%;
   background: rgba(3, 0, 37, 0.75);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   padding: 0;
   color: white;
@@ -108,7 +146,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: 0.2s ease;
+  transition: 0.25s ease;
+  transform: scale(0.5);
 }
 .page .graphic .circle .preview h2 {
   font-size: 12px;
@@ -116,18 +155,32 @@
   line-height: 100%;
   margin: 6px 0;
   width: 80%;
-  text-shadow: 0 2px 8px black;
+  color: #030025;
+  transform: scale(0.1);
+  transition: 0.2s ease;
 }
 .page .graphic .circle .preview h3 {
   font-size: 11px;
   font-weight: 400;
   line-height: 100%;
   margin: 0;
-  color: rgba(255, 255, 255, 0.6);
-  text-shadow: 0 2px 6px black;
+  color: rgba(3, 0, 37, 0.6);
+  transform: scale(0.1);
+  transition: 0.2s ease;
 }
 .page .graphic .circle:hover .preview {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
   opacity: 1;
+  transform: scale(1);
+}
+.page .graphic .circle:hover .preview h2 {
+  transform: scale(1);
+}
+.page .graphic .circle:hover .preview h3 {
+  transform: scale(1);
 }
 
 @keyframes float {

@@ -72,6 +72,7 @@ window.addEventListener('resize', Resize)
 let lastScrollTop = 0;
 
 try {
+    /*
     const navbar = document.getElementById('navbar');
 
     const navbarHeight = navbar.offsetHeight;
@@ -90,6 +91,7 @@ try {
 
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
     });
+    */
 
 } catch {
 
