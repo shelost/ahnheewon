@@ -14,11 +14,11 @@
   margin-bottom: 40px;
 }
 #about p {
-  font-family: "Spectral", "Inter", sans-serif;
+  font-family: "Newsreader", "Spectral", "Inter", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 350;
   line-height: 140%;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.12px;
   margin-bottom: 28px;
 }
 
@@ -108,6 +108,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 .page .graphic .circle.light {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 5px -5px 15px rgba(0, 0, 0, 0.05);

@@ -19,11 +19,11 @@
     margin-bottom: 40px;
 
     p{
-        font-family: 'Spectral', 'Inter', sans-serif;
+        font-family: 'Newsreader', 'Spectral', 'Inter', sans-serif;
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 350;
         line-height: 140%;
-        letter-spacing: -0.6px;
+        letter-spacing: -0.12px;
         margin-bottom: 28px;
     }
 }
@@ -125,6 +125,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            display: none;
 
             &.light{
                 box-shadow: 0 10px 30px rgba(black, 0.2), inset 5px -5px 15px rgba(black, 0.05);
