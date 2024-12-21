@@ -233,6 +233,7 @@ h1 {
 .articles a.inactive {
   pointer-events: none;
   position: relative;
+  display: none;
 }
 .articles a.inactive .thumbnail {
   opacity: 0.25;
