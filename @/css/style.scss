@@ -107,6 +107,17 @@ button{
         display: flex;
         align-items: center;
         gap: 14px;
+
+        a{
+            &:first-child{
+                background: red;
+                display: none;
+            }
+        }
+
+
+
+
     }
 
     .navbtn{
