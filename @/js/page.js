@@ -1,5 +1,6 @@
 var elem = document.getElementById('main')
 
+/*
 var msnry = new Masonry(elem, {
     // options
     itemSelector: '.card',
@@ -22,6 +23,7 @@ setTimeout(() => {
     }
 
 }, 200);
+*/
 
 
 //
